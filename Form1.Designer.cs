@@ -216,6 +216,7 @@
             this.No1Btn.TabIndex = 13;
             this.No1Btn.Text = "1";
             this.No1Btn.UseVisualStyleBackColor = false;
+            this.No1Btn.Click += new System.EventHandler(this.No1Btn_Click);
             // 
             // No2Btn
             // 
