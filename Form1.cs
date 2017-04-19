@@ -101,7 +101,14 @@ namespace WindowsFormsApplication3
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+                System.IO.FileStream fs =
+                    (System.IO.FileStream)saveFileDialog1.OpenFile();
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
