@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.NotePadTextBox = new System.Windows.Forms.RichTextBox();
             this.ModeBtn = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
@@ -46,17 +47,38 @@
             this.No3Btn = new System.Windows.Forms.Button();
             this.EnterBtn = new System.Windows.Forms.Button();
             this.AsteriskBtn = new System.Windows.Forms.Button();
-            this.ZeroBtn = new System.Windows.Forms.Button();
+            this.SpaceBtn = new System.Windows.Forms.Button();
             this.HashtagBtn = new System.Windows.Forms.Button();
             this.Builder = new System.Windows.Forms.TextBox();
             this.ModeStatus = new System.Windows.Forms.TextBox();
+            this.No8 = new System.Windows.Forms.ListBox();
+            this.RepeatLetterTimer = new System.Windows.Forms.Timer(this.components);
+            this.No9 = new System.Windows.Forms.ListBox();
+            this.No7 = new System.Windows.Forms.ListBox();
+            this.No4 = new System.Windows.Forms.ListBox();
+            this.No5 = new System.Windows.Forms.ListBox();
+            this.No6 = new System.Windows.Forms.ListBox();
+            this.No1 = new System.Windows.Forms.ListBox();
+            this.No2 = new System.Windows.Forms.ListBox();
+            this.No3 = new System.Windows.Forms.ListBox();
+            this.NoAsterisk = new System.Windows.Forms.ListBox();
+            this.NoHashtag = new System.Windows.Forms.ListBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.FileMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ConfigureMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // NotePadTextBox
             // 
-            this.NotePadTextBox.Location = new System.Drawing.Point(12, 12);
+            this.NotePadTextBox.Location = new System.Drawing.Point(12, 40);
             this.NotePadTextBox.Name = "NotePadTextBox";
-            this.NotePadTextBox.Size = new System.Drawing.Size(565, 177);
+            this.NotePadTextBox.Size = new System.Drawing.Size(565, 149);
             this.NotePadTextBox.TabIndex = 0;
             this.NotePadTextBox.Text = "";
             // 
@@ -69,6 +91,7 @@
             this.ModeBtn.TabIndex = 1;
             this.ModeBtn.Text = "Mode";
             this.ModeBtn.UseVisualStyleBackColor = false;
+            this.ModeBtn.Click += new System.EventHandler(this.ModeBtn_Click);
             // 
             // NextBtn
             // 
@@ -118,6 +141,7 @@
             this.No7Btn.TabIndex = 6;
             this.No7Btn.Text = "7";
             this.No7Btn.UseVisualStyleBackColor = false;
+            this.No7Btn.Click += new System.EventHandler(this.No7Btn_Click);
             // 
             // No8Btn
             // 
@@ -128,6 +152,7 @@
             this.No8Btn.TabIndex = 7;
             this.No8Btn.Text = "8";
             this.No8Btn.UseVisualStyleBackColor = false;
+            this.No8Btn.Click += new System.EventHandler(this.No8Btn_Click);
             // 
             // No9Btn
             // 
@@ -138,6 +163,7 @@
             this.No9Btn.TabIndex = 8;
             this.No9Btn.Text = "9";
             this.No9Btn.UseVisualStyleBackColor = false;
+            this.No9Btn.Click += new System.EventHandler(this.No9Btn_Click);
             // 
             // No4Btn
             // 
@@ -158,6 +184,7 @@
             this.No5Btn.TabIndex = 10;
             this.No5Btn.Text = "5";
             this.No5Btn.UseVisualStyleBackColor = false;
+            this.No5Btn.Click += new System.EventHandler(this.No5Btn_Click);
             // 
             // No6Btn
             // 
@@ -168,6 +195,7 @@
             this.No6Btn.TabIndex = 11;
             this.No6Btn.Text = "6";
             this.No6Btn.UseVisualStyleBackColor = false;
+            this.No6Btn.Click += new System.EventHandler(this.No6Btn_Click);
             // 
             // BlankBtn2
             // 
@@ -217,6 +245,7 @@
             this.EnterBtn.TabIndex = 16;
             this.EnterBtn.Text = "Enter";
             this.EnterBtn.UseVisualStyleBackColor = false;
+            this.EnterBtn.Click += new System.EventHandler(this.EnterBtn_Click);
             // 
             // AsteriskBtn
             // 
@@ -225,18 +254,19 @@
             this.AsteriskBtn.Name = "AsteriskBtn";
             this.AsteriskBtn.Size = new System.Drawing.Size(53, 53);
             this.AsteriskBtn.TabIndex = 17;
-            this.AsteriskBtn.Text = "* - _";
+            this.AsteriskBtn.Text = "* - _ 0";
             this.AsteriskBtn.UseVisualStyleBackColor = false;
             // 
-            // ZeroBtn
+            // SpaceBtn
             // 
-            this.ZeroBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ZeroBtn.Location = new System.Drawing.Point(242, 491);
-            this.ZeroBtn.Name = "ZeroBtn";
-            this.ZeroBtn.Size = new System.Drawing.Size(53, 53);
-            this.ZeroBtn.TabIndex = 18;
-            this.ZeroBtn.Text = "000";
-            this.ZeroBtn.UseVisualStyleBackColor = false;
+            this.SpaceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.SpaceBtn.Location = new System.Drawing.Point(242, 491);
+            this.SpaceBtn.Name = "SpaceBtn";
+            this.SpaceBtn.Size = new System.Drawing.Size(53, 53);
+            this.SpaceBtn.TabIndex = 18;
+            this.SpaceBtn.Text = "[    ]";
+            this.SpaceBtn.UseVisualStyleBackColor = false;
+            this.SpaceBtn.Click += new System.EventHandler(this.SpaceBtn_Click);
             // 
             // HashtagBtn
             // 
@@ -245,7 +275,7 @@
             this.HashtagBtn.Name = "HashtagBtn";
             this.HashtagBtn.Size = new System.Drawing.Size(53, 53);
             this.HashtagBtn.TabIndex = 19;
-            this.HashtagBtn.Text = "#";
+            this.HashtagBtn.Text = "# - _ 0";
             this.HashtagBtn.UseVisualStyleBackColor = false;
             // 
             // Builder
@@ -264,15 +294,268 @@
             this.ModeStatus.TabIndex = 21;
             this.ModeStatus.Text = "Multi-Press";
             // 
+            // No8
+            // 
+            this.No8.FormattingEnabled = true;
+            this.No8.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "8",
+            "A",
+            "B",
+            "C"});
+            this.No8.Location = new System.Drawing.Point(464, 255);
+            this.No8.Name = "No8";
+            this.No8.Size = new System.Drawing.Size(23, 95);
+            this.No8.TabIndex = 22;
+            // 
+            // RepeatLetterTimer
+            // 
+            this.RepeatLetterTimer.Interval = 1000;
+            this.RepeatLetterTimer.Tick += new System.EventHandler(this.RepeatLetterTimer_Tick);
+            // 
+            // No9
+            // 
+            this.No9.FormattingEnabled = true;
+            this.No9.Items.AddRange(new object[] {
+            "d",
+            "e",
+            "f",
+            "9",
+            "D",
+            "E",
+            "F"});
+            this.No9.Location = new System.Drawing.Point(493, 255);
+            this.No9.Name = "No9";
+            this.No9.Size = new System.Drawing.Size(21, 95);
+            this.No9.TabIndex = 23;
+            // 
+            // No7
+            // 
+            this.No7.FormattingEnabled = true;
+            this.No7.Items.AddRange(new object[] {
+            ".",
+            "~",
+            "\"",
+            "7",
+            "\'",
+            ":",
+            ";"});
+            this.No7.Location = new System.Drawing.Point(436, 255);
+            this.No7.Name = "No7";
+            this.No7.Size = new System.Drawing.Size(22, 95);
+            this.No7.TabIndex = 24;
+            // 
+            // No4
+            // 
+            this.No4.FormattingEnabled = true;
+            this.No4.Items.AddRange(new object[] {
+            "g",
+            "h",
+            "i",
+            "4",
+            "G",
+            "H",
+            "I"});
+            this.No4.Location = new System.Drawing.Point(435, 356);
+            this.No4.Name = "No4";
+            this.No4.Size = new System.Drawing.Size(23, 95);
+            this.No4.TabIndex = 25;
+            // 
+            // No5
+            // 
+            this.No5.FormattingEnabled = true;
+            this.No5.Items.AddRange(new object[] {
+            "j",
+            "k",
+            "l",
+            "5",
+            "J",
+            "K",
+            "L"});
+            this.No5.Location = new System.Drawing.Point(464, 356);
+            this.No5.Name = "No5";
+            this.No5.Size = new System.Drawing.Size(23, 95);
+            this.No5.TabIndex = 26;
+            // 
+            // No6
+            // 
+            this.No6.FormattingEnabled = true;
+            this.No6.Items.AddRange(new object[] {
+            "m",
+            "n",
+            "o",
+            "6",
+            "M",
+            "N",
+            "O"});
+            this.No6.Location = new System.Drawing.Point(493, 356);
+            this.No6.Name = "No6";
+            this.No6.Size = new System.Drawing.Size(23, 95);
+            this.No6.TabIndex = 27;
+            // 
+            // No1
+            // 
+            this.No1.FormattingEnabled = true;
+            this.No1.Items.AddRange(new object[] {
+            "p",
+            "q",
+            "r",
+            "s",
+            "1",
+            "P",
+            "Q",
+            "R",
+            "S"});
+            this.No1.Location = new System.Drawing.Point(12, 255);
+            this.No1.Name = "No1";
+            this.No1.Size = new System.Drawing.Size(23, 121);
+            this.No1.TabIndex = 28;
+            // 
+            // No2
+            // 
+            this.No2.FormattingEnabled = true;
+            this.No2.Items.AddRange(new object[] {
+            "t",
+            "u",
+            "v",
+            "2",
+            "T",
+            "U",
+            "V"});
+            this.No2.Location = new System.Drawing.Point(41, 255);
+            this.No2.Name = "No2";
+            this.No2.Size = new System.Drawing.Size(23, 121);
+            this.No2.TabIndex = 29;
+            // 
+            // No3
+            // 
+            this.No3.FormattingEnabled = true;
+            this.No3.Items.AddRange(new object[] {
+            "w",
+            "x",
+            "y",
+            "z",
+            "3",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.No3.Location = new System.Drawing.Point(70, 255);
+            this.No3.Name = "No3";
+            this.No3.Size = new System.Drawing.Size(23, 121);
+            this.No3.TabIndex = 30;
+            // 
+            // NoAsterisk
+            // 
+            this.NoAsterisk.FormattingEnabled = true;
+            this.NoAsterisk.Items.AddRange(new object[] {
+            "*",
+            "-",
+            "_",
+            "0"});
+            this.NoAsterisk.Location = new System.Drawing.Point(12, 393);
+            this.NoAsterisk.Name = "NoAsterisk";
+            this.NoAsterisk.Size = new System.Drawing.Size(23, 69);
+            this.NoAsterisk.TabIndex = 31;
+            // 
+            // NoHashtag
+            // 
+            this.NoHashtag.FormattingEnabled = true;
+            this.NoHashtag.Items.AddRange(new object[] {
+            "#",
+            "-",
+            "_"});
+            this.NoHashtag.Location = new System.Drawing.Point(41, 393);
+            this.NoHashtag.Name = "NoHashtag";
+            this.NoHashtag.Size = new System.Drawing.Size(23, 69);
+            this.NoHashtag.TabIndex = 32;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileMenuStrip,
+            this.ConfigureMenuStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(589, 24);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // FileMenuStrip
+            // 
+            this.FileMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.FileMenuStrip.Name = "FileMenuStrip";
+            this.FileMenuStrip.Size = new System.Drawing.Size(37, 20);
+            this.FileMenuStrip.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // ConfigureMenuStrip
+            // 
+            this.ConfigureMenuStrip.Name = "ConfigureMenuStrip";
+            this.ConfigureMenuStrip.Size = new System.Drawing.Size(72, 20);
+            this.ConfigureMenuStrip.Text = "Configure";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 597);
+            this.Controls.Add(this.NoHashtag);
+            this.Controls.Add(this.NoAsterisk);
+            this.Controls.Add(this.No3);
+            this.Controls.Add(this.No2);
+            this.Controls.Add(this.No1);
+            this.Controls.Add(this.No6);
+            this.Controls.Add(this.No5);
+            this.Controls.Add(this.No4);
+            this.Controls.Add(this.No7);
+            this.Controls.Add(this.No9);
+            this.Controls.Add(this.No8);
             this.Controls.Add(this.ModeStatus);
             this.Controls.Add(this.Builder);
             this.Controls.Add(this.HashtagBtn);
-            this.Controls.Add(this.ZeroBtn);
+            this.Controls.Add(this.SpaceBtn);
             this.Controls.Add(this.AsteriskBtn);
             this.Controls.Add(this.EnterBtn);
             this.Controls.Add(this.No3Btn);
@@ -291,8 +574,12 @@
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.ModeBtn);
             this.Controls.Add(this.NotePadTextBox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,10 +605,30 @@
         private System.Windows.Forms.Button No3Btn;
         private System.Windows.Forms.Button EnterBtn;
         private System.Windows.Forms.Button AsteriskBtn;
-        private System.Windows.Forms.Button ZeroBtn;
+        private System.Windows.Forms.Button SpaceBtn;
         private System.Windows.Forms.Button HashtagBtn;
         private System.Windows.Forms.TextBox Builder;
         private System.Windows.Forms.TextBox ModeStatus;
+        private System.Windows.Forms.ListBox No8;
+        private System.Windows.Forms.Timer RepeatLetterTimer;
+        private System.Windows.Forms.ListBox No9;
+        private System.Windows.Forms.ListBox No7;
+        private System.Windows.Forms.ListBox No4;
+        private System.Windows.Forms.ListBox No5;
+        private System.Windows.Forms.ListBox No6;
+        private System.Windows.Forms.ListBox No1;
+        private System.Windows.Forms.ListBox No2;
+        private System.Windows.Forms.ListBox No3;
+        private System.Windows.Forms.ListBox NoAsterisk;
+        private System.Windows.Forms.ListBox NoHashtag;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem FileMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ConfigureMenuStrip;
     }
 }
 
