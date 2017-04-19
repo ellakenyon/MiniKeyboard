@@ -174,6 +174,7 @@
             this.No4Btn.TabIndex = 9;
             this.No4Btn.Text = "4";
             this.No4Btn.UseVisualStyleBackColor = false;
+            this.No4Btn.Click += new System.EventHandler(this.No4Btn_Click);
             // 
             // No5Btn
             // 
