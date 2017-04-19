@@ -139,7 +139,7 @@
             this.No7Btn.Name = "No7Btn";
             this.No7Btn.Size = new System.Drawing.Size(53, 53);
             this.No7Btn.TabIndex = 6;
-            this.No7Btn.Text = "7";
+            this.No7Btn.Text = "7  . , \"";
             this.No7Btn.UseVisualStyleBackColor = false;
             this.No7Btn.Click += new System.EventHandler(this.No7Btn_Click);
             // 
@@ -150,7 +150,7 @@
             this.No8Btn.Name = "No8Btn";
             this.No8Btn.Size = new System.Drawing.Size(53, 53);
             this.No8Btn.TabIndex = 7;
-            this.No8Btn.Text = "8";
+            this.No8Btn.Text = "8  ABC";
             this.No8Btn.UseVisualStyleBackColor = false;
             this.No8Btn.Click += new System.EventHandler(this.No8Btn_Click);
             // 
@@ -161,7 +161,7 @@
             this.No9Btn.Name = "No9Btn";
             this.No9Btn.Size = new System.Drawing.Size(53, 53);
             this.No9Btn.TabIndex = 8;
-            this.No9Btn.Text = "9";
+            this.No9Btn.Text = "9 DEF";
             this.No9Btn.UseVisualStyleBackColor = false;
             this.No9Btn.Click += new System.EventHandler(this.No9Btn_Click);
             // 
@@ -172,7 +172,7 @@
             this.No4Btn.Name = "No4Btn";
             this.No4Btn.Size = new System.Drawing.Size(53, 53);
             this.No4Btn.TabIndex = 9;
-            this.No4Btn.Text = "4";
+            this.No4Btn.Text = "4 GHI";
             this.No4Btn.UseVisualStyleBackColor = false;
             this.No4Btn.Click += new System.EventHandler(this.No4Btn_Click);
             // 
@@ -183,7 +183,7 @@
             this.No5Btn.Name = "No5Btn";
             this.No5Btn.Size = new System.Drawing.Size(53, 53);
             this.No5Btn.TabIndex = 10;
-            this.No5Btn.Text = "5";
+            this.No5Btn.Text = "5 JKL";
             this.No5Btn.UseVisualStyleBackColor = false;
             this.No5Btn.Click += new System.EventHandler(this.No5Btn_Click);
             // 
@@ -194,7 +194,7 @@
             this.No6Btn.Name = "No6Btn";
             this.No6Btn.Size = new System.Drawing.Size(53, 53);
             this.No6Btn.TabIndex = 11;
-            this.No6Btn.Text = "6";
+            this.No6Btn.Text = "6 MNO";
             this.No6Btn.UseVisualStyleBackColor = false;
             this.No6Btn.Click += new System.EventHandler(this.No6Btn_Click);
             // 
@@ -214,7 +214,7 @@
             this.No1Btn.Name = "No1Btn";
             this.No1Btn.Size = new System.Drawing.Size(53, 53);
             this.No1Btn.TabIndex = 13;
-            this.No1Btn.Text = "1";
+            this.No1Btn.Text = "1 PQRS";
             this.No1Btn.UseVisualStyleBackColor = false;
             this.No1Btn.Click += new System.EventHandler(this.No1Btn_Click);
             // 
@@ -225,7 +225,7 @@
             this.No2Btn.Name = "No2Btn";
             this.No2Btn.Size = new System.Drawing.Size(53, 53);
             this.No2Btn.TabIndex = 14;
-            this.No2Btn.Text = "2";
+            this.No2Btn.Text = "2 TUV";
             this.No2Btn.UseVisualStyleBackColor = false;
             this.No2Btn.Click += new System.EventHandler(this.No2Btn_Click);
             // 
@@ -236,7 +236,7 @@
             this.No3Btn.Name = "No3Btn";
             this.No3Btn.Size = new System.Drawing.Size(53, 53);
             this.No3Btn.TabIndex = 15;
-            this.No3Btn.Text = "3";
+            this.No3Btn.Text = "3 WXYZ";
             this.No3Btn.UseVisualStyleBackColor = false;
             this.No3Btn.Click += new System.EventHandler(this.No3Btn_Click);
             // 
@@ -280,8 +280,9 @@
             this.HashtagBtn.Name = "HashtagBtn";
             this.HashtagBtn.Size = new System.Drawing.Size(53, 53);
             this.HashtagBtn.TabIndex = 19;
-            this.HashtagBtn.Text = "# - _ 0";
+            this.HashtagBtn.Text = "# - _ ";
             this.HashtagBtn.UseVisualStyleBackColor = false;
+            this.HashtagBtn.Click += new System.EventHandler(this.HashtagBtn_Click);
             // 
             // Builder
             // 
