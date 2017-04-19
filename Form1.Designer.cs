@@ -236,6 +236,7 @@
             this.No3Btn.TabIndex = 15;
             this.No3Btn.Text = "3";
             this.No3Btn.UseVisualStyleBackColor = false;
+            this.No3Btn.Click += new System.EventHandler(this.No3Btn_Click);
             // 
             // EnterBtn
             // 

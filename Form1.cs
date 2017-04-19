@@ -262,6 +262,31 @@ namespace WindowsFormsApplication3
             }
         }
 
+        private void No3Btn_Click(object sender, EventArgs e)
+        {
+            if (ModeStatus.Text == "Multi-Press")
+            {
+                if (first_visit == true)
+                {
+                    GlobalListbox.Items.Clear();
+                    //Clear global listbox, then add the button's listbox.
+                    GlobalListbox.Items.AddRange(No3.Items);
+                }
+                // My multi press code goes in here
+
+                RepeatLetterTimer.Enabled = false;
+                intMyListIndex++;
+
+                RepeatLetterTimer.Enabled = true;
+                // For loop to transfer list info from listbox to global variable.
+
+            }
+            else
+            {
+                // My prediction code goes in here
+            }
+        }
+
         
     }
 }
