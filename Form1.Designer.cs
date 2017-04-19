@@ -226,6 +226,7 @@
             this.No2Btn.TabIndex = 14;
             this.No2Btn.Text = "2";
             this.No2Btn.UseVisualStyleBackColor = false;
+            this.No2Btn.Click += new System.EventHandler(this.No2Btn_Click);
             // 
             // No3Btn
             // 
