@@ -17,7 +17,7 @@ namespace WindowsFormsApplication3
 
 
         bool mode = true; //if true then in multi press mode else false in prediction mode.
-        ListBox GlobalListbox = new ListBox();
+        ListBox GlobalListbox = new ListBox(); //Global variable for listboxes.
         int intMyListIndex = 0;
         bool first_visit = true;
         string Str_KeyStrokes;
@@ -47,9 +47,11 @@ namespace WindowsFormsApplication3
         {
             if (ModeStatus.Text == "Multi-Press")
             {
+                //If first visit to button, clear GlobalListbox.
                 if (first_visit == true)
                 {
                     GlobalListbox.Items.Clear();
+                    //Add items from No.8's listbox to global listbox. 
                     GlobalListbox.Items.AddRange(No8.Items);                  
                 }
                 // My multi press code goes in here
