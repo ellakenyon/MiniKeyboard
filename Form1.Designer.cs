@@ -135,17 +135,19 @@
             // No7Btn
             // 
             this.No7Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No7Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.No7Btn.Location = new System.Drawing.Point(183, 314);
             this.No7Btn.Name = "No7Btn";
             this.No7Btn.Size = new System.Drawing.Size(53, 53);
             this.No7Btn.TabIndex = 6;
-            this.No7Btn.Text = "7  . , \"";
+            this.No7Btn.Text = "  7       . , \"";
             this.No7Btn.UseVisualStyleBackColor = false;
             this.No7Btn.Click += new System.EventHandler(this.No7Btn_Click);
             // 
             // No8Btn
             // 
             this.No8Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No8Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.No8Btn.Location = new System.Drawing.Point(242, 314);
             this.No8Btn.Name = "No8Btn";
             this.No8Btn.Size = new System.Drawing.Size(53, 53);
@@ -157,6 +159,7 @@
             // No9Btn
             // 
             this.No9Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No9Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.No9Btn.Location = new System.Drawing.Point(301, 314);
             this.No9Btn.Name = "No9Btn";
             this.No9Btn.Size = new System.Drawing.Size(53, 53);
@@ -168,6 +171,7 @@
             // No4Btn
             // 
             this.No4Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No4Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
             this.No4Btn.Location = new System.Drawing.Point(183, 373);
             this.No4Btn.Name = "No4Btn";
             this.No4Btn.Size = new System.Drawing.Size(53, 53);
@@ -179,6 +183,7 @@
             // No5Btn
             // 
             this.No5Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No5Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
             this.No5Btn.Location = new System.Drawing.Point(242, 373);
             this.No5Btn.Name = "No5Btn";
             this.No5Btn.Size = new System.Drawing.Size(53, 53);
@@ -190,6 +195,7 @@
             // No6Btn
             // 
             this.No6Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No6Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.No6Btn.Location = new System.Drawing.Point(301, 373);
             this.No6Btn.Name = "No6Btn";
             this.No6Btn.Size = new System.Drawing.Size(53, 53);
@@ -210,6 +216,7 @@
             // No1Btn
             // 
             this.No1Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No1Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.No1Btn.Location = new System.Drawing.Point(183, 432);
             this.No1Btn.Name = "No1Btn";
             this.No1Btn.Size = new System.Drawing.Size(53, 53);
@@ -221,6 +228,7 @@
             // No2Btn
             // 
             this.No2Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No2Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.No2Btn.Location = new System.Drawing.Point(242, 432);
             this.No2Btn.Name = "No2Btn";
             this.No2Btn.Size = new System.Drawing.Size(53, 53);
@@ -232,6 +240,7 @@
             // No3Btn
             // 
             this.No3Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.No3Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.No3Btn.Location = new System.Drawing.Point(301, 432);
             this.No3Btn.Name = "No3Btn";
             this.No3Btn.Size = new System.Drawing.Size(53, 53);
@@ -315,6 +324,7 @@
             this.No8.Name = "No8";
             this.No8.Size = new System.Drawing.Size(23, 95);
             this.No8.TabIndex = 22;
+            this.No8.Visible = false;
             // 
             // RepeatLetterTimer
             // 
@@ -336,6 +346,7 @@
             this.No9.Name = "No9";
             this.No9.Size = new System.Drawing.Size(21, 95);
             this.No9.TabIndex = 23;
+            this.No9.Visible = false;
             // 
             // No7
             // 
@@ -352,6 +363,7 @@
             this.No7.Name = "No7";
             this.No7.Size = new System.Drawing.Size(22, 95);
             this.No7.TabIndex = 24;
+            this.No7.Visible = false;
             // 
             // No4
             // 
@@ -368,6 +380,7 @@
             this.No4.Name = "No4";
             this.No4.Size = new System.Drawing.Size(23, 95);
             this.No4.TabIndex = 25;
+            this.No4.Visible = false;
             // 
             // No5
             // 
@@ -384,6 +397,7 @@
             this.No5.Name = "No5";
             this.No5.Size = new System.Drawing.Size(23, 95);
             this.No5.TabIndex = 26;
+            this.No5.Visible = false;
             // 
             // No6
             // 
@@ -400,6 +414,7 @@
             this.No6.Name = "No6";
             this.No6.Size = new System.Drawing.Size(23, 95);
             this.No6.TabIndex = 27;
+            this.No6.Visible = false;
             // 
             // No1
             // 
@@ -418,6 +433,7 @@
             this.No1.Name = "No1";
             this.No1.Size = new System.Drawing.Size(23, 121);
             this.No1.TabIndex = 28;
+            this.No1.Visible = false;
             // 
             // No2
             // 
@@ -434,6 +450,7 @@
             this.No2.Name = "No2";
             this.No2.Size = new System.Drawing.Size(23, 121);
             this.No2.TabIndex = 29;
+            this.No2.Visible = false;
             // 
             // No3
             // 
@@ -452,6 +469,7 @@
             this.No3.Name = "No3";
             this.No3.Size = new System.Drawing.Size(23, 121);
             this.No3.TabIndex = 30;
+            this.No3.Visible = false;
             // 
             // NoAsterisk
             // 
@@ -465,6 +483,7 @@
             this.NoAsterisk.Name = "NoAsterisk";
             this.NoAsterisk.Size = new System.Drawing.Size(23, 69);
             this.NoAsterisk.TabIndex = 31;
+            this.NoAsterisk.Visible = false;
             // 
             // NoHashtag
             // 
@@ -477,6 +496,7 @@
             this.NoHashtag.Name = "NoHashtag";
             this.NoHashtag.Size = new System.Drawing.Size(23, 69);
             this.NoHashtag.TabIndex = 32;
+            this.NoHashtag.Visible = false;
             // 
             // menuStrip1
             // 
